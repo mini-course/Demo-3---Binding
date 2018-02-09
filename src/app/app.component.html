@@ -1,0 +1,9 @@
+<div class="button-wrapper" (click)="onClickWrapper()">
+  <button class="big-button" type="button" [class.active]="isActive" [style.backgroundColor]="isActive ? 'lightgreen' : 'red' " (click)="onClickButton($event)">
+    Just Click
+  </button>
+
+  <p>Label Preview: {{ label }}</p>
+  <input type="text" [(ngModel)]="label"/>
+  <button class="small-button" type="button" (click)="clearLabel()">Clear</button>
+</div>
